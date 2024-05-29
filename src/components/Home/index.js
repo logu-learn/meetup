@@ -22,12 +22,12 @@ const Home = props => {
     <>
       <BeforeRegisH1>Welcome to Meetup</BeforeRegisH1>
       <BeforeRegisP>Please register for the topic</BeforeRegisP>
-      <Link to='/register'>
+      <Link to="/register">
         <BeforeRegisBtn onClick={onClickRegister}>Register</BeforeRegisBtn>
       </Link>
       <BeforeRegisImg
-        src='https://assets.ccbp.in/frontend/react-js/meetup/meetup-img.png'
-        alt='meetup'
+        src="https://assets.ccbp.in/frontend/react-js/meetup/meetup-img.png"
+        alt="meetup"
       />
     </>
   )
@@ -36,8 +36,8 @@ const Home = props => {
       <AfterRegisH1>{`Hello ${name}`}</AfterRegisH1>
       <AfterRegisP>{`Welcome to ${topic}`}</AfterRegisP>
       <AfterRegisImg
-        src='https://assets.ccbp.in/frontend/react-js/meetup/meetup-img.png'
-        alt='meetup'
+        src="https://assets.ccbp.in/frontend/react-js/meetup/meetup-img.png"
+        alt="meetup"
       />
     </>
   )

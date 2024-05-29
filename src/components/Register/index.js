@@ -72,28 +72,28 @@ const Register = props => (
           <MainDiv>
             <RegisterCardDiv>
               <RegisterImg
-                src="https://assets.ccbp.in/frontend/react-js/meetup/website-register-img.png"
-                alt="website register"
+                src='https://assets.ccbp.in/frontend/react-js/meetup/website-register-img.png'
+                alt='website register'
               />
-              <RegisterForm onClick={submitForm}>
+              <RegisterForm onSubmit={submitForm}>
                 <FormH1>Let us join</FormH1>
-                <Label htmlFor="name">NAME</Label>
+                <Label htmlFor='name'>NAME</Label>
                 <Input
-                  type="text"
-                  id="name"
+                  type='text'
+                  id='name'
                   value={name}
-                  placeholder="Your name"
+                  placeholder='Your name'
                   onChange={onChangeName}
                 />
-                <Label htmlFor="topic">TOPICS</Label>
-                <Select id="topic" value={topic} onChange={onChangeTopic}>
+                <Label htmlFor='topic'>TOPICS</Label>
+                <Select id='topic' value={topic} onChange={onChangeTopic}>
                   {topicsList.map(each => (
                     <Option key={each.id} value={each.id}>
                       {each.displayText}
                     </Option>
                   ))}
                 </Select>
-                <FormBtn type="submit">Register Now</FormBtn>
+                <FormBtn type='submit'>Register Now</FormBtn>
                 {registerErr ? <ErrP>Please enter your name</ErrP> : null}
               </RegisterForm>
             </RegisterCardDiv>

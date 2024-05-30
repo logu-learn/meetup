@@ -86,9 +86,9 @@ const Register = props => (
                   onChange={onChangeName}
                 />
                 <Label htmlFor='topic'>TOPICS</Label>
-                <Select id='topic' value={topic} onChange={onChangeTopic}>
+                <Select id='topic' onChange={onChangeTopic}>
                   {topicsList.map(each => (
-                    <Option key={each.id} value={each.id}>
+                    <Option key={each.id} value={each.displayText}>
                       {each.displayText}
                     </Option>
                   ))}

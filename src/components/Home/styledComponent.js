@@ -39,11 +39,11 @@ export const BeforeRegisImg = styled.img`
   width: 60%;
 `
 export const AfterRegisImg = styled.img`
-  height: 350px;
+  height: 350px;  v 
   width: 60%;
 `
 
-export const AfterRegisH1 = styled.p`
+export const AfterRegisH1 = styled.h1`
   font-size: 70px;
   font-weight: 700;
   color: #3b82f6;
